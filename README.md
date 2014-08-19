@@ -1,4 +1,4 @@
-Chris Madrigal Personal resume site.
+## Chris Madrigal Personal resume site.
 
 Build with the following tecnologies:
 
