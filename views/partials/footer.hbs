@@ -20,8 +20,10 @@
         return {{{stringify conf}}};
       })
 
-      // Load Main Javascript
-      require(['main']);
+      // Start Marionette.
+      require(['apps/chrismadrigal'], function (app) {
+        app.start();
+      });
 
     </script>
   </body>
