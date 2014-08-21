@@ -5,7 +5,7 @@ define(function (require) {
 
   HeaderView = Marionette.ItemView.extend({
     template: require('hbs!header'),
-    className: 'site-header animated fadeInDown'
+    className: 'site-header animated fadeIn'
   });
 
   return HeaderView;

@@ -1,7 +1,8 @@
 define(function (require) {
   var app = require('app')
   , Marionette = require('marionette')
-  , HeaderView = require('views/header');
+  , HeaderView = require('views/header')
+  , MainContentView = require('views/main');
 
   // App-level plugins.
   require('plugins/handlebars');
@@ -14,6 +15,8 @@ define(function (require) {
   });
 
   app.header.show(new HeaderView());
+  app.main.show(new MainContentView);
+
 
   // Return modified app.
   return app;

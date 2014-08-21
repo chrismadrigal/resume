@@ -1,1 +1,78 @@
-// Adds components here like buttons, tabs etc...
+.content-section {
+  max-width: 900px;
+  padding: 50px 20px;
+  margin: auto;
+}
+.content-section.small {
+  max-width: 500px;
+}
+.content-section > h3{
+  font-weight: 400;
+  font-size: 0.95em;
+  text-transform: uppercase;
+}
+/*
+* Timeline
+*/
+.timeline {
+  position: relative;
+
+  // margin-top: 2em;
+  // margin-bottom: 2em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: @timelineOffset;
+    width: 2px;
+    height: 100%;
+    background: @timelineBorder;
+  }
+
+  .timeline-block {
+    position: relative;
+    padding-bottom: 60px;
+
+    .timeline-marker {
+      position: absolute;
+      left: @timelineOffset;
+      top: 6px;
+      margin-left: -5px;
+      background: #343338;
+      border: 2px solid @timelineColor;
+      .square(13px);
+      .rounded(50%);
+    }
+    .timeline-title {
+      width: @timelineOffset;
+      float: left;
+      padding: 0 30px;
+      text-align: right;
+      font-weight: 100;
+    }
+    .timeline-title p{
+      margin: 0;
+      padding: 0;
+      color: @timelineColor;
+    }
+    .timeline-title span {
+      color: #b9b9b9;
+    }
+    .timeline-content {
+      width: 100 - @timelineOffset;
+      float: left;
+      padding: 0 30px;
+    }
+    .timeline-content h4 {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+    }
+    .timeline-content p {
+      margin: 10px 0;
+      color: #b9b9b9;
+    }
+
+  }
+}
