@@ -153,6 +153,7 @@ module.exports = function (grunt) {
     }
     grunt.task.run('concurrent:'+nodemonTask);
   });
+  grunt.registerTask('compile', 'less');
 
   // Check for errors and run a system growl notification like a boss.
   ['warn', 'fatal'].forEach(function (level) {
