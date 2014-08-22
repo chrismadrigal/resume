@@ -123,6 +123,12 @@ module.exports = function (grunt) {
       inspectBreak: {
         tasks: ['nodemon:inspectBreak', 'node-inspector', 'less', 'watch']
       }
+    },
+
+    shell: {
+      startServer: {
+        command: 'npm start'
+      }
     }
   });
 
@@ -133,8 +139,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-node-inspector');
+  grunt.loadNpmTasks('grunt-shell');
 
   // Register tasks.
+  grunt.registerTask('prod', ['less', 'shell']);
   grunt.registerTask('default', 'concurrent:dev');
   grunt.registerTask("debug", function(inspect, breakOnFirstLine){
     var nodemonTask = "dev";
@@ -145,7 +153,6 @@ module.exports = function (grunt) {
     }
     grunt.task.run('concurrent:'+nodemonTask);
   });
-  grunt.registerTask('prod', 'less');
 
   // Check for errors and run a system growl notification like a boss.
   ['warn', 'fatal'].forEach(function (level) {
