@@ -143,7 +143,7 @@ module.exports = function (grunt) {
 
   // Register tasks.
   grunt.registerTask('prod', ['less', 'shell']);
-  grunt.registerTask('default', 'concurrent:dev');
+  grunt.registerTask('default', 'less');
   grunt.registerTask("debug", function(inspect, breakOnFirstLine){
     var nodemonTask = "dev";
 
