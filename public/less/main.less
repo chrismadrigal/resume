@@ -9,6 +9,9 @@ body {
   font-family: @main_font_stack;
   font-weight: 100;
 }
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
 header {
   // min-height: 500px;
   background: #000;
@@ -33,7 +36,7 @@ header {
 }
 main {
   .intro-text {
-    background: #f4f4f4;
+    background: @bgLightGray;
     padding-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
@@ -51,14 +54,14 @@ main {
       font-size: 0.93em;
       line-height: 1.4;
       font-weight: 100;
-      color: #909090;
+      color: @lightGray;
     }
     .dash {
       display: inline-block;
       vertical-align: middle;
       width: 15px;
       border: none;
-      border-bottom: 1px solid #CDCDCD;
+      border-bottom: 1px solid @lightGray;
     }
   }
   .background {
@@ -76,7 +79,7 @@ main {
     }
   }
   .experience {
-    background: #343338;
+    background: @bgDarkGray;
     color: #fff;
 
     .content-section {
@@ -84,25 +87,17 @@ main {
       overflow: hidden;
     }
   }
-  .skills {
-    h4 {
-      color: #B9B9B9;
-      font-weight: 300;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+  .education-interests {
+    background: @bgLightGray;
   }
-  .education {
-    background: #f4f4f4;
+  .education h4,
+  .education h5 {
+    margin: 0;
+    padding: 0;
+  }
 
-    ul {
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-    }
+  .education h5 {
+    margin-bottom: 20px;
+    font-size: 0.95em;
   }
 }
