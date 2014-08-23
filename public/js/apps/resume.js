@@ -6,7 +6,9 @@ define(function (require) {
   , FooterView = require('views/footer');
 
   // App-level plugins.
+  require('plugins/views');
   require('plugins/handlebars');
+  require('plugins/timeline');
 
   // Add app-level regions.
   app.addRegions({
