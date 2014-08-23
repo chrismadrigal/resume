@@ -24,6 +24,7 @@ requirejs.config({
     'text': '../vendor/require.text',
     'handlebars': '../vendor/handlebars',
     'transit': '../vendor/jquery.transit',
+    'enquire': '../vendor/enquire',
     'waypoints': '../vendor/waypoints'
   },
 
