@@ -3,7 +3,7 @@ define(function (require) {
     , Marionette = require('marionette')
     ;
 
-  HeaderView = Marionette.ItemView.extend({
+  var HeaderView = Marionette.ItemView.extend({
     template: require('hbs!header'),
     className: 'site-header animated fadeIn'
   });

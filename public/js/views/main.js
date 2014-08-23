@@ -3,7 +3,7 @@ define(function (require) {
     , Marionette = require('marionette')
     ;
 
-  MainContent = Marionette.ItemView.extend({
+  var MainContent = Marionette.ItemView.extend({
     template: require('hbs!main'),
     className: 'site-main'
   });
