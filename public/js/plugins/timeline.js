@@ -24,7 +24,7 @@ define(function (require) {
             $el.find('.timeline-title').removeClass('is-hidden').addClass('bounceInLeft animated')
             $el.find('.timeline-content').removeClass('is-hidden').addClass('bounceInRight animated')
           }
-        }, {offset: "90%"});
+        }, {offset: "85%"});
       });
     });
   });

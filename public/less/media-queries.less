@@ -7,11 +7,39 @@
       font-size: 0.8em;
     }
   }
+
+  footer {
+    .site-footer {
+      background-attachment: fixed;
+    }
+    .content-footer {
+      position: static;
+      margin-bottom: 0;
+      .contact-info {
+        padding: 90px 20px;
+      }
+      .contact-info .email a {
+        font-size: 1.8em;
+      }
+      .contact-info .social-links {
+        font-size: 0.8em;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 480px) {
+  main {
+    .intro-text blockquote {
+      font-size: 1.2em;
+    }
+    .intro-text em {
+      font-size: 0.85em;
+    }
+  }
   footer {
-    .contact-info .email a {
+    .content-footer .contact-info .email a {
       font-size: 1.2em;
     }
   }
