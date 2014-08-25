@@ -1,6 +1,6 @@
 ## Chris Madrigal Personal resume site.
 
-Build with the following tecnologies:
+Built using the following tecnologies:
 
 * NodeJs
 * Express
