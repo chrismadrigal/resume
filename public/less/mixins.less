@@ -130,7 +130,7 @@
   -o-transition-timing-function:@effect;
   transition-timing-function:@effect;
 }
-.transition(@transition: all @trans ease-in-out) {
+.transition(@transition: all 0.2s ease-in-out) {
   -webkit-transition:@transition;
   -moz-transition:@transition;
   -ms-transition:@transition;
@@ -152,6 +152,12 @@ transition:@property @duration @effect;
   background:-ms-linear-gradient(top,@color1 0%,@color2 100%);
   background:linear-gradient(top,@color1 0%,@color2 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1',endColorstr='@color2',GradientType=0);
+}
+.animation-duration(@duration: 0.2s) {
+  -moz-animation-duration:@duration;
+  -webkit-animation-duration:@duration;
+  -o-animation-duration:@duration;
+  animation-duration:@duration;
 }
 // Blur
 .blur(@amt) {
