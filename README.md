@@ -1,4 +1,5 @@
 ## Chris Madrigal Personal resume site.
+[chrismadrigal.com](chrismadrigal.com)
 
 Built using the following tecnologies:
 
