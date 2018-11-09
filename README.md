@@ -1,3 +1,5 @@
+Deprecated, please visit [linkedin.com/in/chrismadrigal](linkedin.com/in/chrismadrigal) for my updated resume.
+
 ## Chris Madrigal Personal resume site.
 [chrismadrigal.com](http://chrismadrigal.com)
 
